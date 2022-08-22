@@ -2604,4 +2604,62 @@ Database
     Isolation and Security: Using Amazon VPC, you can isolate your DB Instances in your own virtual network, and connect to your existing IT infrastructure using industry-standard encrypted IPsec VPN.
 
 
-    
+Presentation Session:
+Stand/sit up right and relax
+Relate to customers and actively listen 
+Have a customer success story 
+Understand your weakness for example your filler words 
+
+
+Research and value mapping 
+Invest time - set up pre-meetings/talk to staeholders(actively listen)
+
+Who are the people? 
+
+Delivery for POC2
+
+    1, 5, 2, 7, 12, 6(ours), 15, 14, 9, 11, 8, 13, 4, 10, 3 
+
+
+
+Web tier: Small burstable instance for front end (HTML, CSS, in browser javascript) maybe root volume 
+App tier:  to interact with frontend and database (Elastic Block store)
+Nat gateway for for outbound request. For patches and stuff 
+
+
+#!/bin/bash
+yum update -y 
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service 
+echo "Hello there from $(hostname -f)" > /var/www/html/index.html
+
+
+### Security at AWS
+
+
+Confidentiality: allow only authorized users to access to resources 
+Integrity: Preserving data at rest and in trasit. Can we proof it's the original data 
+Avaialability: having access to information resources when needed
+
+AWS `Config`: The visibility of data(what has changed, where is the evidence, what is in my environment, what impact did a particular action have)
+AWS `CloudTrail`: Auditability(who, what, when, where). It's on by default. 
+AWS `IAM`: Controllability(effectively manage users, temporary credentials)
+AWS `CloudFormation`: Automation and Agility(ensuring high availability, can I apply securiyt checks ina reproducible manner)
+
+
+AWS Shared Responsiblity Model
+
+Security of the cloud: infrastracture security, compute storage, networking, Database, Avialability, Regions, Edge Locatoins 
+Security in the cloud:SSE, CSE, Network Traffic Protection, OS network and firewall configuration. 
+
+AWS Cloud adoption framwork security perspective 
+
+Directive 
+    what are your security requirements
+Detective 
+    Looks for bad things happening anyway
+Preventive 
+    Stop bad things from happening 
+Responsive 
+    Fix or alert on bad things detected 
