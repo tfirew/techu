@@ -2637,9 +2637,10 @@ echo "Hello there from $(hostname -f)" > /var/www/html/index.html
 
 ### Security at AWS
 
+Security is the practice of protecting your intellectual property from unauthorized access, use, or modification.
 
 Confidentiality: allow only authorized users to access to resources 
-Integrity: Preserving data at rest and in trasit. Can we proof it's the original data 
+Integrity: Preserving data at rest and in trasit. Can we proof it's the original data. The accuracy and consistency or data over its enitre lifecycle. 
 Avaialability: having access to information resources when needed
 
 AWS `Config`: The visibility of data(what has changed, where is the evidence, what is in my environment, what impact did a particular action have)
@@ -2653,13 +2654,43 @@ AWS Shared Responsiblity Model
 Security of the cloud: infrastracture security, compute storage, networking, Database, Avialability, Regions, Edge Locatoins 
 Security in the cloud:SSE, CSE, Network Traffic Protection, OS network and firewall configuration. 
 
-AWS Cloud adoption framwork security perspective 
+`AWS Cloud adoption framwork security perspective `
 
 Directive 
-    what are your security requirements
+    what are your security requirements(HIPPA compliance)
 Detective 
     Looks for bad things happening anyway
 Preventive 
-    Stop bad things from happening 
+    Stop bad things from happening(strong audit, authentication...)
 Responsive 
-    Fix or alert on bad things detected 
+    Fix or alert on bad things detected(intrusion)
+
+Forensic Subnet(for analysis for any problem: Not trafic in no trafic out)
+
+Common incidents
+
+    Compromized user credentials
+    Insufficient data integrity 
+    Overly permissibe access 
+
+ad hoc() one time analysis
+
+
+
+What is DevOps?
+    Continous Integration and Continous Delivery 
+ 
+    A continous delivery model that is repeatable, reliable, stable, resilient, and secure, while improving operatinal efficiency. 
+
+API calls are automatically signed when using AWS SDK, CLI, and the aws management console. 
+
+Root access: unresticted access to AWS cloud 
+IAM User: Restricted access to aws cloud  
+
+POC3: Deliverable 
+
+Scores for recommendations(practices into and descriptions)
+Reports of the informations that's provided by the inspector???
+
+
+The resource types that you can protect by using AWS WAF web ACLs are Amazon CloudFront distributions, Amazon API Gateway APIs, and Application Load Balancers. 
