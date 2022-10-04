@@ -2694,3 +2694,39 @@ Reports of the informations that's provided by the inspector???
 
 
 The resource types that you can protect by using AWS WAF web ACLs are Amazon CloudFront distributions, Amazon API Gateway APIs, and Application Load Balancers. 
+
+## Database 
+Data is any bit of information that a system is accessing, using, or generating. To function, applications need a place where data from users, devices, and applications can be stored and from where it can be made available. Databases are the backend systems that provide or store data for applications of all types. These types of applications range from small mobile apps to enterprise applications that operate at internet scale. 
+
+Types of applications that databases serve
+
+Internet-scale applications 
+Real-time application
+Open-source applications 
+Enterprise applications
+
+Database types
+
+Relational: Relational databases store data in tables with predefined schemas and relationships between them.
+
+Key-value databases are nonrelational databases that store data as a collection of key-value pairs, in which a key serves as a unique identifier. 
+Useful for: High-traffic web applications, ecommerce systems, and gaming applications
+
+In-memory databases are used for applications that require real-time access to data.
+Useful for: Caching, user session management, gaming leaderboards, and geospatial applications
+
+A document database is designed to store semistructured data as JavaScript Object Notation (JSON)-like documents.
+Useful for: Content management, catalogs, and user profiles
+
+One-size fits all 
+
+Large volume, broad variety, and rapid velocity define big data.
+Big data can be described as data management challenges that—due to increasing volume, velocity, and variety of data—that organizations cannot solve by using traditional databases. Most definitions of big data include the concept of what is commonly known as the three Vs of big data
+
+Volume: Big data typically ranges from terabytes to petabytes of data in size.
+Variety: Big data includes a wide range of sources and formats (for example, web logs, social media interactions, and online ecommerce transactions).
+Velocity: Big data often has specific requirements regarding the time between when data generation occurs and when actionable insights based on that data are delivered to users. Therefore, data must be collected, stored, processed, and analyzed within relatively short windows, which range from daily to real time.
+
+AWS big data 
+
+AWS provides a broad and fully integrated portfolio of cloud computing services to help an organization build, secure, and deploy all their big data applications. With AWS, organizations have no hardware to procure and no infrastructure to maintain and scale. Thus, organizations can instead focus internal resources on uncovering new insights from their data. Because AWS is constantly adding new capabilities and features, AWS customers are always able to use the latest technologies without making long-term investment commitments. Managing big data on AWS has several advantages, including immediate availability, ability to handle massive and changing workloads, strict security, and a strong partner community.
